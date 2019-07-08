@@ -1,0 +1,30 @@
+.appList-container{
+  .list{
+    margin-left: 30px;
+    font-size: 32px;
+  }
+  .list-item{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 30px;
+    padding-left: 0;
+  }
+  .app-index{
+    font-size: 40px;
+    color: #666;
+  }
+  .app-icon{
+    margin-left: 30px;
+  }
+  .app-info{
+    text-align: left;
+    margin-left: 30px;
+    .app-name{
+
+    }
+    .app-categray{
+      color: #666;
+    }
+  }
+}
