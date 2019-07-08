@@ -2,9 +2,9 @@
 
 ### 截图
 
-![](https://github.com/shortscreen/applist.png)
+![](https://raw.githubusercontent.com/fozero/appstore-react/master/shortscreen/applist.png)
 
-### 目录结构
+### 项目结构
 ```
 |--config    
 |--node_modules
