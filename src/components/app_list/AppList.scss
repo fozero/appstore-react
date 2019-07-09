@@ -2,6 +2,7 @@
   .list{
     margin-left: 30px;
     font-size: 32px;
+    color: #000;
   }
   .list-item{
     display: flex;
@@ -9,22 +10,33 @@
     border-bottom: 1px solid #eee;
     padding: 30px;
     padding-left: 0;
+    &:nth-child(even){
+      .app-icon{
+        border-radius: 100%;
+      }
+    }
+    &:nth-child(odd){
+      .app-icon{
+        border-radius: 20px;
+      }
+    }
   }
   .app-index{
     font-size: 40px;
     color: #666;
+    font-weight: 300;
+    width: 74px;
   }
   .app-icon{
-    margin-left: 30px;
+    width: 100px;
+    // height: 100px;
   }
   .app-info{
     text-align: left;
     margin-left: 30px;
-    .app-name{
-
-    }
     .app-categray{
       color: #666;
+      margin-top: 10px;
     }
   }
 }

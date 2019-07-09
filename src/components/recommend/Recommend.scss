@@ -11,17 +11,27 @@
   }
   .app-item{
     padding: 0 20px;
-    font-size: 32px;
-    color: #333;
+    font-size: 28px;
+    color: #000;
     &:first-child{
       padding-left: 0;
     }
     .app-icon{
-      width: 150px;
+      width: 120px;
+      border-radius: 20px;
     }
-    .app-name{}
+    .app-name{
+      text-overflow: -o-ellipsis-lastline;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      /*! autoprefixer: off */
+      -webkit-box-orient: vertical;
+    }
     .app-categray{
       color: #666;
+      margin-top: 8px;
     }
   }
 }

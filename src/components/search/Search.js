@@ -40,6 +40,7 @@ class Search extends Component {
         return (
             <div className='search-container'>
                 <div className='search-bar'>
+                    <div className='iconfont icon-search'></div>
                     <input className='search-input' type="text" ref='keyword' onChange={this.appSearch.bind(this)} onFocus={this.onFoucs.bind(this)} placeholder="搜索应用" />
                     {
                         this.state.showCancelBtn &&

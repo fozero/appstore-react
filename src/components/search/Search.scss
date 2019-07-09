@@ -11,6 +11,12 @@
         justify-content: space-around;
         align-items: center;
         border-bottom: 1px solid #dadada;
+        .icon-search{
+            position: absolute;
+            left: 50px;
+            font-size: 36px;
+            color: #666;
+        }
     }
     .search-input{
         background:#ddd;
@@ -18,6 +24,7 @@
         padding: 10px 20px;
         border-radius: 10px;
         flex: 1;
+        text-indent: 40px;
     }
     .search-cancel{
         margin-left: 20px;
