@@ -54,6 +54,7 @@
     "react-app-polyfill": "^1.0.1",
     "react-dev-utils": "^9.0.1",
     "react-dom": "^16.8.6",
+    "react-pullload": "^1.2.0",
     "react-redux": "^7.1.0",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import './AppList.scss';
-class RankList extends Component {
+class AppList extends Component {
     render() {
         return (
             <div className='appList-container'>
@@ -26,4 +26,4 @@ class RankList extends Component {
     }
 }
 
-export default RankList;
+export default AppList;
