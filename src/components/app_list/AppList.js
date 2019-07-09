@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import LazyLoad from 'react-lazy-load';
 
 import './AppList.scss';
 class AppList extends Component {
@@ -12,7 +13,9 @@ class AppList extends Component {
                                 <li className='list-item' key={index}>
                                     <div className='app-index'>{index+1}</div>
                                     <div className='app-img'>
-                                        <img className='app-icon' src={item['im:image'][0].label} alt="" />
+                                        <LazyLoad height={60} offsetVertical={100}>
+                                            <img className='app-icon' src={item['im:image'][0].label} alt="" />
+                                        </LazyLoad>
                                     </div>
                                     <div className='app-info'>
                                         <div className='app-name'>{item['im:name'].label}</div>
