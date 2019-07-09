@@ -27,13 +27,16 @@
     font-weight: 300;
     width: 74px;
   }
-  .app-icon{
+  .app-img{
     width: 100px;
-    // height: 100px;
+    .app-icon{
+      width: 100px;
+    }
   }
   .app-info{
     text-align: left;
     margin-left: 30px;
+    flex: 1;
     .app-categray{
       color: #666;
       margin-top: 10px;
