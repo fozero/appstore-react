@@ -13,6 +13,11 @@ export default(state = defaultState, action={})=>{
         ...state,
         searchList: action.searchList
       }
+    case types.REMOVE_SERACH_LIST:
+      return{
+        ...state,
+        searchList:[]
+      }
     default:
       return state
   }

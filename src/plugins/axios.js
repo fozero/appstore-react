@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { showFullScreenLoading, hideFullScreenLoading} from '../utils/commons'
+import { showFullScreenLoading, hideFullScreenLoading, showFailToast} from '../utils/commons'
 
 let baseURL = '/';
 const _axios = axios.create({
@@ -29,6 +29,8 @@ _axios.interceptors.response.use(function (response) {
   return response.data;
 }, function (error) {
   // Do something with response error
+  hideFullScreenLoading();
+  showFailToast();
   return Promise.reject(error);
 });
 

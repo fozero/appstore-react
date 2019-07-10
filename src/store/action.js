@@ -7,3 +7,9 @@ export const saveSearchList = (searchList) => {
     searchList
   }
 }
+
+export const removeSearchList = () => {
+  return {
+    type: types.REMOVE_SERACH_LIST
+  }
+}

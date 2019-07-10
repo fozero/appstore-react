@@ -1,3 +1,11 @@
 .searchResult-container{
-  
+  background: #fff;
+  min-height: 1334px;
+  padding-top: 92px;
+  .search-bar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+  }
 }

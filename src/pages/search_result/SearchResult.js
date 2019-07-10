@@ -4,7 +4,7 @@ import Search from '../../components/search/Search';
 import SearchList from '../../components/search_list/SearchList';
 import './SearchResult.scss';
 import $api from '../../api/index.js';
-import { saveSearchList } from '../../store/action'
+import { saveSearchList, removeSearchList } from '../../store/action'
 class SearchResult extends Component {
   constructor(props){
     super(props);
@@ -31,8 +31,11 @@ class SearchResult extends Component {
 
   onFoucs() {
   }
+
   onCancel(){
     this.props.history.push("/");
+    // 删除历史结果
+    this.props.removeSearchList();
   }
 
 
@@ -52,7 +55,8 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-  saveSearchList: searchList => dispatch(saveSearchList(searchList))
+  saveSearchList: searchList => dispatch(saveSearchList(searchList)),
+  removeSearchList: () => dispatch(removeSearchList())
 })
 
 // 通过connect生成容器组件

@@ -16,6 +16,10 @@ function hideLoading(){
   Toast.hide();
 }
 
+export function showFailToast(){
+  Toast.fail('服务器错误',2);
+}
+
 
 /**
  * 合并请求，同一时刻只显示一个loading
