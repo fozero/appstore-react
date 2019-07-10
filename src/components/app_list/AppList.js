@@ -13,7 +13,7 @@ class AppList extends Component {
                                 <li className='list-item' key={index}>
                                     <div className='app-index'>{index+1}</div>
                                     <div className='app-img'>
-                                        <LazyLoad height={60} offsetVertical={100}>
+                                        <LazyLoad offsetVertical={100}>
                                             <img className='app-icon' src={item['im:image'][0].label} alt="" />
                                         </LazyLoad>
                                     </div>
